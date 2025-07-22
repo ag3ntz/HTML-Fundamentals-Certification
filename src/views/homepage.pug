@@ -102,7 +102,7 @@ include ../includes/head
 
             <!-- Todos los Eventos -->
             each value, index in events.inperson_events
-                +card_event( "#", value.name, value.date, value.place, `${value.start_time} - ${value.end_time}`, value.category, value.price_from )
+                +card_event( value.name, value.date, value.place, `${value.start_time} - ${value.end_time}`, value.category, value.price_from )
 
         </div>
 
